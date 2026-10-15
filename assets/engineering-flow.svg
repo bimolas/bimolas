@@ -1,122 +1,187 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
-<title id="title">From problem to production: software engineering workflow and runtime request architecture</title>
-<desc id="desc">A dark navy and cyan architecture infographic. The top lane shows discover, design, build, integrate, ship and observe, with animated particles travelling through the stages. The bottom lane shows a client request passing through an API gateway, authentication and service discovery, load balancing, application services, data stores and an event bus, with observability feedback.</desc>
-<defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1220"/><stop offset=".55" stop-color="#101d32"/><stop offset="1" stop-color="#07111d"/></linearGradient>
-  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
-  <linearGradient id="green" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22c55e"/><stop offset="1" stop-color="#2dd4bf"/></linearGradient>
-  <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#27405c" stroke-width=".6" opacity=".45"/></pattern>
-  <style>
-    .heading{font:700 25px 'Segoe UI',Arial,sans-serif;fill:#f0f6fc;letter-spacing:1px}
-    .sub{font:12px 'Segoe UI',Arial,sans-serif;fill:#8fa9c5;letter-spacing:2px}
-    .label{font:700 14px 'Segoe UI',Arial,sans-serif;fill:#e6f4ff}
-    .small{font:12px 'Segoe UI',Arial,sans-serif;fill:#9eb5ce}
-    .tiny{font:10px 'Segoe UI',Arial,sans-serif;fill:#6f8ba8;letter-spacing:1px}
-    .node{fill:#111f33;stroke:#31506e;stroke-width:1.4}
-    .nodeBlue{fill:#10253b;stroke:#2588b9;stroke-width:1.5}
-    .nodeGreen{fill:#102a2b;stroke:#218b83;stroke-width:1.5}
-    .edge{fill:none;stroke:#3d739b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-    .dash{stroke-dasharray:7 9;animation:dash 2.8s linear infinite}
-    .pulse{animation:pulse 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
-    @keyframes dash{to{stroke-dashoffset:-64}}
-    @keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
-  </style>
-</defs>
-<rect width="1200" height="820" rx="24" fill="url(#bg)"/>
-<rect width="1200" height="820" rx="24" fill="url(#grid)" opacity=".8"/>
-<rect x="1" y="1" width="1198" height="818" rx="23" fill="none" stroke="#28435f" stroke-width="2"/>
-<text x="48" y="54" class="sub">ENGINEERING PLAYBOOK / 01</text>
-<text x="48" y="88" class="heading">FROM PROBLEM TO PRODUCTION</text>
-<text x="48" y="113" class="small">A deliberate path from understanding the problem to operating a dependable system.</text>
-<g transform="translate(48 145)">
-  <rect width="1104" height="184" rx="16" fill="#0b1727" stroke="#223c57"/>
-  <text x="24" y="30" class="sub">THE DELIVERY LIFECYCLE</text>
-  <path d="M105 91H1000" class="edge dash" stroke="url(#cyan)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="960" viewBox="0 0 1200 960" role="img" aria-labelledby="title desc">
+  <title id="title">From a code change to a running system</title>
+  <desc id="desc">A restrained dark engineering diagram. The first panel maps the delivery cycle from understanding a problem through design, implementation, integration and release, with production feedback returning to the next iteration. The second panel shows a request moving from a client through an API gateway and load balancer to a healthy service instance. The service registers with discovery, works with data and messaging dependencies, and returns a response. Logs, metrics and traces help explain system behavior.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 Z" fill="#79c0ff"/></marker>
+    <marker id="arrow-muted" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 Z" fill="#6e9bbf"/></marker>
+    <marker id="arrow-soft" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 Z" fill="#8b949e"/></marker>
+    <style>
+      text { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+      .eyebrow { fill: #79c0ff; font-size: 11px; font-weight: 700; letter-spacing: 1.7px; }
+      .title { fill: #f0f6fc; font-size: 28px; font-weight: 650; letter-spacing: -.5px; }
+      .subtitle { fill: #9da7b3; font-size: 13px; }
+      .panel { fill: #0d1117; stroke: #30363d; stroke-width: 1.2; }
+      .node { fill: #161b22; stroke: #3a4653; stroke-width: 1.2; }
+      .node-blue { fill: #111d2a; stroke: #35658a; stroke-width: 1.25; }
+      .node-teal { fill: #102320; stroke: #2e7369; stroke-width: 1.25; }
+      .node-title { fill: #e6edf3; font-size: 13px; font-weight: 650; }
+      .node-copy { fill: #9da7b3; font-size: 10.5px; }
+      .step-number { fill: #79c0ff; font-size: 10px; font-weight: 700; letter-spacing: .8px; }
+      .zone { fill: #8b949e; font-size: 10px; font-weight: 700; letter-spacing: 1.1px; }
+      .line { fill: none; stroke: #79c0ff; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
+      .line-muted { fill: none; stroke: #6e9bbf; stroke-width: 1.35; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow-muted); }
+      .line-dashed { fill: none; stroke: #8b949e; stroke-width: 1.25; stroke-linecap: round; stroke-dasharray: 4 5; marker-end: url(#arrow-soft); }
+      .response-line { fill: none; stroke: #6e9bbf; stroke-width: 1.35; stroke-linecap: round; stroke-linejoin: round; }
+      .fine { stroke: #30363d; stroke-width: 1; }
+      .tag { fill: #1b2733; stroke: #3a4653; stroke-width: 1; }
+      .tag-text { fill: #c9d1d9; font-size: 10px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="960" fill="#090d12"/>
+  <rect x="1" y="1" width="1198" height="958" rx="20" fill="none" stroke="#30363d"/>
+
+  <text x="48" y="42" class="eyebrow">SOFTWARE ENGINEERING / FIELD NOTES</text>
+  <text x="48" y="79" class="title">From a code change to a running system</text>
+  <text x="48" y="104" class="subtitle">The work doesn’t end when the code compiles. It ends when the system behaves as intended.</text>
+  <line x1="48" y1="125" x2="1152" y2="125" class="fine"/>
+
+  <rect x="48" y="146" width="1104" height="257" rx="14" class="panel"/>
+  <text x="72" y="176" class="eyebrow">01 / DELIVERY LOOP</text>
+  <text x="72" y="199" class="subtitle">Five stages. One feedback loop from production back to the next change.</text>
+
+  <path d="M240 285 H294 M462 285 H516 M684 285 H738 M906 285 H960" class="line-muted"/>
+  <circle r="3.4" fill="#79c0ff">
+    <animateMotion dur="6.2s" repeatCount="indefinite" path="M240 285 H1128"/>
+  </circle>
+
   <g>
-    <rect x="22" y="55" width="180" height="91" rx="12" class="node"/>
-    <circle cx="48" cy="78" r="13" fill="#173d5a"/><text x="48" y="82" text-anchor="middle" class="small">01</text>
-    <text x="68" y="82" class="label">Discover</text><text x="38" y="109" class="small">Problem · users</text><text x="38" y="127" class="small">Requirements · risks</text>
+    <rect x="72" y="242" width="168" height="86" rx="9" class="node"/>
+    <text x="88" y="263" class="step-number">01</text>
+    <text x="88" y="283" class="node-title">Understand</text>
+    <text x="88" y="304" class="node-copy">Users · constraints</text>
+    <text x="88" y="318" class="node-copy">Requirements · risks</text>
   </g>
   <g>
-    <rect x="241" y="55" width="180" height="91" rx="12" class="node"/>
-    <circle cx="267" cy="78" r="13" fill="#173d5a"/><text x="267" y="82" text-anchor="middle" class="small">02</text>
-    <text x="287" y="82" class="label">Design</text><text x="257" y="109" class="small">Domain · API</text><text x="257" y="127" class="small">Data · boundaries</text>
+    <rect x="294" y="242" width="168" height="86" rx="9" class="node"/>
+    <text x="310" y="263" class="step-number">02</text>
+    <text x="310" y="283" class="node-title">Design</text>
+    <text x="310" y="304" class="node-copy">Contracts · data</text>
+    <text x="310" y="318" class="node-copy">Boundaries · trade-offs</text>
   </g>
   <g>
-    <rect x="460" y="55" width="180" height="91" rx="12" class="nodeBlue"/>
-    <circle cx="486" cy="78" r="13" fill="#075985"/><text x="486" y="82" text-anchor="middle" class="small">03</text>
-    <text x="506" y="82" class="label">Build</text><text x="476" y="109" class="small">Implement · test</text><text x="476" y="127" class="small">Review · refactor</text>
+    <rect x="516" y="242" width="168" height="86" rx="9" class="node-blue"/>
+    <text x="532" y="263" class="step-number">03</text>
+    <text x="532" y="283" class="node-title">Build &amp; test</text>
+    <text x="532" y="304" class="node-copy">Business rules</text>
+    <text x="532" y="318" class="node-copy">Automated checks</text>
   </g>
   <g>
-    <rect x="679" y="55" width="180" height="91" rx="12" class="nodeBlue"/>
-    <circle cx="705" cy="78" r="13" fill="#075985"/><text x="705" y="82" text-anchor="middle" class="small">04</text>
-    <text x="725" y="82" class="label">Integrate</text><text x="695" y="109" class="small">APIs · messaging</text><text x="695" y="127" class="small">Dependencies · CI</text>
+    <rect x="738" y="242" width="168" height="86" rx="9" class="node-blue"/>
+    <text x="754" y="263" class="step-number">04</text>
+    <text x="754" y="283" class="node-title">Integrate</text>
+    <text x="754" y="304" class="node-copy">Service contracts</text>
+    <text x="754" y="318" class="node-copy">Dependencies · CI</text>
   </g>
   <g>
-    <rect x="898" y="55" width="184" height="91" rx="12" class="nodeGreen"/>
-    <circle cx="924" cy="78" r="13" fill="#115e59"/><text x="924" y="82" text-anchor="middle" class="small">05</text>
-    <text x="944" y="82" class="label">Ship &amp; observe</text><text x="914" y="109" class="small">Deploy · monitor</text><text x="914" y="127" class="small">Learn · improve</text>
+    <rect x="960" y="242" width="168" height="86" rx="9" class="node-teal"/>
+    <text x="976" y="263" class="step-number">05</text>
+    <text x="976" y="283" class="node-title">Release &amp; learn</text>
+    <text x="976" y="304" class="node-copy">Deploy · observe</text>
+    <text x="976" y="318" class="node-copy">Fix · improve</text>
   </g>
-  <circle r="5" fill="#67e8f9" filter="url(#glow)"><animateMotion dur="5s" repeatCount="indefinite" path="M105 91 H1000"/></circle>
-  <circle r="4" fill="#a5f3fc" filter="url(#glow)"><animateMotion dur="5s" begin="-2.5s" repeatCount="indefinite" path="M105 91 H1000"/></circle>
-  <path d="M1080 162 C1080 178 30 178 30 160" fill="none" stroke="#287c91" stroke-width="1.5" stroke-dasharray="4 7"/>
-  <text x="554" y="169" text-anchor="middle" class="tiny">FEEDBACK LOOP: OBSERVATIONS INFORM THE NEXT ITERATION</text>
-</g>
-<text x="48" y="374" class="sub">RUNTIME VIEW / 02</text>
-<text x="48" y="407" class="heading">WHAT HAPPENS WHEN A REQUEST ARRIVES?</text>
-<text x="48" y="431" class="small">A simplified service architecture — actual components depend on the application.</text>
-<g>
-  <rect x="48" y="467" width="1104" height="211" rx="16" fill="#0b1727" stroke="#223c57"/>
-  <text x="72" y="494" class="tiny">SYNCHRONOUS REQUEST PATH</text>
-  <path d="M150 557H238 M360 557H440 M560 557H640 M770 557H852" class="edge"/>
-  <path d="M150 557H238 M360 557H440 M560 557H640 M770 557H852" class="edge dash" stroke="#22d3ee"/>
+
+  <path d="M1044 328 V356 H808" class="line-muted"/>
+  <path d="M392 356 H156 V328" class="line-muted"/>
+  <rect x="401" y="343" width="398" height="26" rx="13" fill="#0d1117" stroke="#30363d"/>
+  <text x="600" y="359.5" text-anchor="middle" class="tag-text">PRODUCTION FEEDBACK SHAPES THE NEXT ITERATION</text>
+
+  <rect x="48" y="425" width="1104" height="490" rx="14" class="panel"/>
+  <text x="72" y="455" class="eyebrow">02 / RUNTIME PATH</text>
+  <text x="72" y="482" class="title" style="font-size:22px">One request, end to end</text>
+  <text x="72" y="505" class="subtitle">Discovery provides the available instances; the load balancer selects one healthy target.</text>
+
+  <path d="M820 478 H860" class="line"/>
+  <text x="870" y="482" class="node-copy">Request / response</text>
+  <path d="M820 501 H860" class="line-dashed"/>
+  <text x="870" y="505" class="node-copy">Registration / discovery</text>
+
+  <text x="72" y="548" class="zone">CLIENT EDGE</text>
+  <line x1="72" y1="558" x2="374" y2="558" class="fine"/>
+  <text x="420" y="548" class="zone">ROUTING</text>
+  <line x1="420" y1="558" x2="570" y2="558" class="fine"/>
+  <text x="620" y="548" class="zone">APPLICATION</text>
+  <line x1="620" y1="558" x2="838" y2="558" class="fine"/>
+  <text x="900" y="548" class="zone">DEPENDENCIES</text>
+  <line x1="900" y1="558" x2="1110" y2="558" class="fine"/>
+
+  <rect x="620" y="634" width="218" height="153" rx="11" fill="#0b141d" stroke="#30404e" stroke-width="1.1"/>
+
+  <path d="M729 634 V606 H570" class="line-dashed"/>
+  <path d="M495 628 V663" class="line-dashed"/>
+  <text x="645" y="600" class="node-copy" style="font-size:9.5px">REGISTER / HEARTBEAT</text>
+
+  <path d="M184 701 H224" class="line"/>
+  <path d="M374 701 H420" class="line"/>
+  <path d="M570 701 H593 V688 H636" class="line"/>
+  <path d="M593 701 V740 H636" class="line"/>
+
+  <circle r="3.5" fill="#a5d6ff">
+    <animateMotion dur="4.8s" repeatCount="indefinite" path="M184 701 H224 H374 H420 H570 H593 V688 H636"/>
+  </circle>
+
+  <path d="M838 701 H866 V694 H900" class="line-muted"/>
+  <path d="M866 701 V756 H900" class="line-muted"/>
+
+  <path d="M729 787 V817 H781" class="response-line"/>
+  <path d="M390 817 H128 V739" class="line-muted"/>
+  <circle r="3" fill="#8b949e">
+    <animateMotion dur="6.8s" begin="-2.2s" repeatCount="indefinite" path="M729 787 V817 H128 V739"/>
+  </circle>
+  <rect x="397" y="805" width="384" height="24" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <text x="589" y="821" text-anchor="middle" class="tag-text">RESPONSE RETURNS THROUGH THE GATEWAY TO THE CLIENT</text>
+
   <g>
-    <rect x="72" y="522" width="78" height="70" rx="10" class="node"/>
-    <text x="111" y="550" text-anchor="middle" class="label">Client</text><text x="111" y="570" text-anchor="middle" class="tiny">UI / app</text>
+    <rect x="72" y="663" width="112" height="76" rx="9" class="node"/>
+    <text x="128" y="693" text-anchor="middle" class="node-title">Client</text>
+    <text x="128" y="712" text-anchor="middle" class="node-copy">Web / mobile</text>
   </g>
   <g>
-    <rect x="238" y="522" width="122" height="70" rx="10" class="nodeBlue"/>
-    <text x="299" y="548" text-anchor="middle" class="label">API Gateway</text><text x="299" y="568" text-anchor="middle" class="tiny">ROUTE / FILTER</text>
+    <rect x="224" y="663" width="150" height="76" rx="9" class="node-blue"/>
+    <text x="299" y="693" text-anchor="middle" class="node-title">API gateway</text>
+    <text x="299" y="712" text-anchor="middle" class="node-copy">Route · policy</text>
   </g>
   <g>
-    <rect x="440" y="522" width="120" height="70" rx="10" class="nodeBlue"/>
-    <text x="500" y="547" text-anchor="middle" class="label">Security</text><text x="500" y="566" text-anchor="middle" class="tiny">AUTH / POLICY</text>
+    <rect x="420" y="663" width="150" height="76" rx="9" class="node-blue"/>
+    <text x="495" y="691" text-anchor="middle" class="node-title">Load balancer</text>
+    <text x="495" y="709" text-anchor="middle" class="node-copy">Choose one healthy</text>
+    <text x="495" y="722" text-anchor="middle" class="node-copy">service instance</text>
   </g>
   <g>
-    <rect x="640" y="522" width="130" height="70" rx="10" class="nodeBlue"/>
-    <text x="705" y="547" text-anchor="middle" class="label">Discovery + LB</text><text x="705" y="566" text-anchor="middle" class="tiny">INSTANCE PICK</text>
+    <rect x="420" y="582" width="150" height="46" rx="8" class="node"/>
+    <text x="495" y="601" text-anchor="middle" class="node-title" style="font-size:11px">Service registry</text>
+    <text x="495" y="616" text-anchor="middle" class="node-copy" style="font-size:9.5px">Registered instances</text>
   </g>
   <g>
-    <rect x="852" y="522" width="270" height="70" rx="10" class="nodeGreen"/>
-    <text x="987" y="547" text-anchor="middle" class="label">Application services</text><text x="987" y="566" text-anchor="middle" class="tiny">BUSINESS LOGIC / VALIDATION</text>
+    <rect x="636" y="667" width="186" height="42" rx="7" class="node-blue"/>
+    <text x="649" y="684" class="node-title" style="font-size:11.5px">Service instance A</text>
+    <text x="649" y="699" class="node-copy" style="font-size:9.5px">Healthy target</text>
   </g>
-  <circle r="5" fill="#67e8f9" filter="url(#glow)"><animateMotion dur="4.4s" repeatCount="indefinite" path="M150 557 H238 H360 H440 H560 H640 H770 H852 H1122"/></circle>
-  <path d="M986 592V616H770" class="edge"/>
-  <path d="M770 616H450" class="edge dash"/>
-  <rect x="610" y="600" width="160" height="32" rx="8" class="node"/>
-  <text x="690" y="620" text-anchor="middle" class="small">Events / message bus</text>
-  <path d="M986 592V650H918" class="edge"/>
-  <rect x="772" y="635" width="146" height="30" rx="8" class="node"/>
-  <text x="845" y="654" text-anchor="middle" class="small">Database / cache</text>
-  <rect x="292" y="600" width="220" height="50" rx="9" class="node"/>
-  <text x="402" y="621" text-anchor="middle" class="label">Observability</text>
-  <text x="402" y="638" text-anchor="middle" class="tiny">LOGS · METRICS · TRACES</text>
-  <path d="M852 575 C780 604 690 613 512 625" fill="none" stroke="#b794f4" stroke-width="1.6" stroke-dasharray="5 6"/>
-  <text x="72" y="646" class="tiny">RESPONSE RETURNS TO CLIENT</text>
-</g>
-<g transform="translate(48 704)">
-  <rect width="1104" height="72" rx="14" fill="#0e1b2d" stroke="#28435f"/>
-  <text x="22" y="27" class="sub">ENGINEERING PRINCIPLES</text>
-  <text x="22" y="51" class="small">Clear boundaries</text>
-  <circle cx="170" cy="47" r="3" fill="#22d3ee"/>
-  <text x="190" y="51" class="small">Secure by design</text>
-  <circle cx="345" cy="47" r="3" fill="#22d3ee"/>
-  <text x="365" y="51" class="small">Observable behavior</text>
-  <circle cx="550" cy="47" r="3" fill="#22d3ee"/>
-  <text x="570" y="51" class="small">Automated delivery</text>
-  <circle cx="740" cy="47" r="3" fill="#22d3ee"/>
-  <text x="760" y="51" class="small">Continuous feedback</text>
-</g>
-<text x="1150" y="802" text-anchor="end" class="tiny">BIMOLAS / ENGINEERING NOTES</text>
+  <g>
+    <rect x="636" y="719" width="186" height="42" rx="7" class="node-blue"/>
+    <text x="649" y="736" class="node-title" style="font-size:11.5px">Service instance B</text>
+    <text x="649" y="751" class="node-copy" style="font-size:9.5px">Another eligible target</text>
+  </g>
+  <g>
+    <rect x="900" y="668" width="210" height="52" rx="8" class="node"/>
+    <text x="916" y="690" class="node-title">Data store</text>
+    <text x="916" y="707" class="node-copy">Read / write application state</text>
+  </g>
+  <g>
+    <rect x="900" y="730" width="210" height="52" rx="8" class="node"/>
+    <text x="916" y="752" class="node-title">Message broker</text>
+    <text x="916" y="769" class="node-copy">Publish events for async work</text>
+  </g>
+
+  <rect x="72" y="850" width="1038" height="43" rx="9" fill="#111820" stroke="#30363d" stroke-width="1.1"/>
+  <text x="91" y="876" class="node-title" style="font-size:11px">OBSERVABILITY</text>
+  <rect x="220" y="861" width="60" height="22" rx="6" class="tag"/>
+  <text x="250" y="875.5" text-anchor="middle" class="tag-text">Logs</text>
+  <rect x="289" y="861" width="72" height="22" rx="6" class="tag"/>
+  <text x="325" y="875.5" text-anchor="middle" class="tag-text">Metrics</text>
+  <rect x="370" y="861" width="60" height="22" rx="6" class="tag"/>
+  <text x="400" y="875.5" text-anchor="middle" class="tag-text">Traces</text>
+  <text x="450" y="876" class="node-copy">Signals across the gateway, services and dependencies help explain behavior and failures.</text>
+
+  <text x="1152" y="942" text-anchor="end" fill="#6e7681" font-size="10">CONCEPTUAL PATTERN · COMPONENTS VARY BY STACK</text>
 </svg>
