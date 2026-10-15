@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """One-time local Spotify OAuth helper; it prints a refresh token only to the local terminal."""
 from __future__ import annotations
-import base64, json, os, secrets, threading, webbrowser
+import base64, json, os, secrets, threading, webbrowser, time
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urlparse, parse_qs
@@ -44,15 +44,19 @@ def main() -> int:
             self.wfile.write(f"<html><body style='font:16px sans-serif;background:#101820;color:#e6edf3;padding:3rem'><h2>{message}</h2><p>You can close this tab.</p></body></html>".encode())
 
     server = HTTPServer(("127.0.0.1",8765), CallbackHandler)
-    server.timeout = 180
+    server.timeout = 1
+    deadline = time.monotonic() + 180
     print("Opening Spotify approval in your browser.")
     print("Waiting for approval at", REDIRECT_URI)
     threading.Thread(target=lambda: webbrowser.open(authorize_url),daemon=True).start()
     try:
-        while not result:
+        while not result and time.monotonic() < deadline:
             server.handle_request()
     finally:
         server.server_close()
+    if not result:
+        print("No authorization response arrived within three minutes.")
+        return 1
     if result.get("error"):
         print("Spotify authorization failed:",result["error"])
         return 1
