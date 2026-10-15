@@ -1,7 +1,7 @@
 <!-- Profile README · github.com/bimolas -->
 
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1016,35:122A35,72:176C70,100:8DE2BC&height=205&section=header&text=SAMI%20EL%20MOURTAZAK&fontSize=38&fontColor=E8F0F3&fontAlignY=34&desc=FULL-STACK%20%2F%20BACKEND%20%2F%20SYSTEMS&descSize=13&descAlignY=56&animation=fadeIn" alt="Animated wave header — Sami El Mourtazak, full-stack, backend and systems"/>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,40:14213D,75:005F99,100:00B4D8&height=210&section=header&text=SAMI%20EL%20MOURTAZAK&fontSize=38&fontColor=F0F6FC&fontAlignY=34&desc=SOFTWARE%20ENGINEERING%20%2F%20BACKEND%20%2F%20SYSTEMS&descSize=13&descAlignY=56&animation=fadeIn" alt="Animated wave header — Sami El Mourtazak, software engineering, backend and systems"/>
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=2800&pause=850&color=8DE2BC&center=true&vCenter=true&width=760&lines=Designing+interfaces+and+APIs;Following+data+from+client+to+database;Learning+how+services+fit+together;Build+%E2%86%92+Test+%E2%86%92+Observe+%E2%86%92+Improve" alt="Animated introduction: frontend, APIs, services and engineering workflow"/>
   <br/><br/>
   <a href="https://github.com/bimolas/bimolas/tree/main/site"><img src="https://img.shields.io/badge/OPEN-DEVELOPER%20WORKBENCH-17212B?style=for-the-badge&logo=github&logoColor=8DE2BC" alt="Open developer workbench"/></a>
@@ -143,10 +143,15 @@ The README itself cannot run an interactive audio player. The linked workbench c
 ## 05 / GitHub activity
 
 <div align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=bimolas&show_icons=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF&rank_icon=github" alt="GitHub profile statistics"/>
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bimolas&layout=compact&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" alt="Most used programming languages on GitHub"/>
+  <br/><br/>
+  <img width="95%" src="https://streak-stats.demolab.com?user=bimolas&theme=github-dark-blue&hide_border=true&background=0D1117&ring=58A6FF&fire=F78166&currStreakLabel=58A6FF" alt="GitHub contribution streak"/>
+  <br/><br/>
   <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=bimolas&bg_color=0D1117&color=C9D1D9&line=58A6FF&point=FFFFFF&area=true&hide_border=true" alt="GitHub contribution activity graph"/>
 </div>
 
-<sub>The terminal counters use GitHub data. The audio workbench runs locally in the browser and does not upload your music.</sub>
+<sub>These visualizations are generated from GitHub data by external services. Availability may vary; the graph reflects recorded activity, not a promise of continuous daily work.</sub>
 
 
 ---
@@ -155,6 +160,6 @@ The README itself cannot run an interactive audio player. The linked workbench c
   <a href="https://github.com/bimolas"><img src="https://img.shields.io/badge/GitHub-bimolas-0D1117?style=for-the-badge&logo=github" alt="GitHub profile"/></a>
   <a href="mailto:samielmourtazak@gmail.com"><img src="https://img.shields.io/badge/Email-Let%27s%20connect-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"/></a>
   <br/><br/>
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8DE2BC,48:176C70,100:0B1016&height=112&section=footer&animation=fadeIn" alt="Animated wave footer"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00B4D8,50:005F99,100:0D1117&height=110&section=footer&animation=fadeIn" alt="Animated wave footer"/>
   <sub>Build deliberately. Understand the system. Keep improving.</sub>
 </div>
