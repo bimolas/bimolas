@@ -12,21 +12,28 @@
 
 <br/>
 
+<section>
 <table>
   <tr>
-    <td width="65%" valign="middle">
-      <h2>Building beyond the endpoint.</h2>
-      I’m a software engineering student interested in the full path from <b>API design and data modelling</b> to <b>distributed services and deployment</b>.
+    <td width="66%" valign="middle">
+      <h2>⚡ Building beyond the endpoint.</h2>
+      <p><b>From problem framing to production-ready thinking.</b></p>
+      I’m a software engineering student interested in how the whole system fits together: <b>domain rules → API design → data → service integration → deployment</b>.
       <br/><br/>
-      I enjoy projects that force me to understand how the pieces connect: identity, persistence, messaging, service boundaries, and the infrastructure underneath.
+      I like tracing the connections behind software: who can access a resource, where data lives, how services communicate, and how we know a system is behaving correctly.
+      <br/><br/>
+      <a href="https://github.com/bimolas?tab=repositories"><img src="https://img.shields.io/badge/01-BUILD-10253B?style=for-the-badge&logo=github&logoColor=58A6FF" alt="Build"/></a>
+      <a href="https://github.com/bimolas?tab=repositories"><img src="https://img.shields.io/badge/02-UNDERSTAND-10253B?style=for-the-badge&logo=bookstack&logoColor=58A6FF" alt="Understand"/></a>
+      <a href="https://github.com/bimolas?tab=repositories"><img src="https://img.shields.io/badge/03-IMPROVE-10253B?style=for-the-badge&logo=rocket&logoColor=58A6FF" alt="Improve"/></a>
     </td>
-    <td width="35%" valign="middle" align="center">
-      <img src="https://img.shields.io/badge/BASE-Morocco-0D1117?style=flat-square" alt="Based in Morocco"/><br/>
-      <img src="https://img.shields.io/badge/STUDY-5DDSI-0D1117?style=flat-square" alt="5DDSI"/><br/>
-      <img src="https://img.shields.io/badge/FOCUS-Backend%20%2B%20DevOps-0D1117?style=flat-square" alt="Backend and DevOps"/>
+    <td width="34%" valign="middle" align="center">
+      <img src="https://img.shields.io/badge/⌖-MOROCCO-0D1117?style=for-the-badge&labelColor=0D1117" alt="Based in Morocco"/><br/><br/>
+      <img src="https://img.shields.io/badge/🎓-5DDSI-0D1117?style=for-the-badge&labelColor=0D1117" alt="5DDSI student"/><br/><br/>
+      <img src="https://img.shields.io/badge/FOCUS-BACKEND%20%2B%20SYSTEMS-0D1117?style=for-the-badge&labelColor=0D1117" alt="Backend and systems"/>
     </td>
   </tr>
 </table>
+</section>
 
 ## <img src="https://img.shields.io/badge/01-SELECTED%20ENGINEERING-0D1117?style=flat-square" alt="01 Selected engineering"/>
 
@@ -79,17 +86,32 @@
 
 ## <img src="https://img.shields.io/badge/03-SYSTEMS%20THINKING-0D1117?style=flat-square" alt="03 Systems thinking"/>
 
+<p align="center">
+  <b>From an initial problem to a running, observable system.</b><br/>
+  <sub>A visual map of the engineering lifecycle and the request path through a typical service architecture.</sub>
+</p>
+
 <div align="center">
-
-```text
-       DESIGN             BUILD             CONNECT             OPERATE
-   ┌────────────┐     ┌────────────┐     ┌────────────┐     ┌────────────┐
-   │ Domain     │ ──▶ │ API &      │ ──▶ │ Services & │ ──▶ │ Deploy &   │
-   │ Data model │     │ Core logic │     │ Messaging  │     │ Observe    │
-   └────────────┘     └────────────┘     └────────────┘     └────────────┘
-```
-
+  <img width="100%" src="https://raw.githubusercontent.com/bimolas/bimolas/main/assets/engineering-flow.svg" alt="Animated architecture diagram showing the software delivery lifecycle from discovery and design through build, integration, deployment and observation, plus a runtime request flowing from client through API gateway, security, service discovery and load balancing to application services, data stores, messaging and observability."/>
 </div>
+
+<details>
+  <summary><b>↳ Read the architecture walkthrough</b></summary>
+
+  **01 · Discover the problem** — identify users, constraints, requirements, and risks before choosing a technology.
+
+  **02 · Design the boundaries** — define domain responsibilities, API contracts, data ownership, and how components communicate.
+
+  **03 · Build the core** — implement business rules, validation, persistence, and automated tests.
+
+  **04 · Integrate the system** — connect identity providers, services, event messaging, and external dependencies; verify the contracts between them.
+
+  **05 · Deliver and observe** — build and test through CI, package the application, deploy it, then use logs, metrics, and traces to understand its behavior.
+
+  **At runtime:** a client request reaches the API gateway, passes routing and security checks, and is sent to a selected service instance. The service applies business logic and accesses the required data store or publishes an event. Observability captures signals, and the response returns to the client.
+
+  <sub>Illustrative architecture, not a claim that every component is used in every project. Service discovery and load balancing may be implemented in different places depending on the stack.</sub>
+</details>
 
 <div align="center">
   <h3>Currently sharpening</h3>
