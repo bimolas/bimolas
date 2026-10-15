@@ -1,32 +1,45 @@
 <!-- Profile README · github.com/bimolas -->
 
 <div align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/bimolas/bimolas/main/assets/terminal-card.svg" alt="Custom terminal card with the GitHub avatar converted to colored ASCII, full-stack focus, and live GitHub repository statistics"/>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1016,35:122A35,72:176C70,100:8DE2BC&height=205&section=header&text=SAMI%20EL%20MOURTAZAK&fontSize=38&fontColor=E8F0F3&fontAlignY=34&desc=FULL-STACK%20%2F%20BACKEND%20%2F%20SYSTEMS&descSize=13&descAlignY=56&animation=fadeIn" alt="Animated wave header — Sami El Mourtazak, full-stack, backend and systems"/>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=2800&pause=850&color=8DE2BC&center=true&vCenter=true&width=760&lines=Designing+interfaces+and+APIs;Following+data+from+client+to+database;Learning+how+services+fit+together;Build+%E2%86%92+Test+%E2%86%92+Observe+%E2%86%92+Improve" alt="Animated introduction: frontend, APIs, services and engineering workflow"/>
   <br/><br/>
-  <a href="https://github.com/bimolas?tab=repositories"><img src="https://img.shields.io/badge/OPEN-REPOSITORIES-17212B?style=for-the-badge&logo=github&logoColor=white" alt="Open repositories"/></a>
+  <a href="https://github.com/bimolas/bimolas/tree/main/site"><img src="https://img.shields.io/badge/OPEN-DEVELOPER%20WORKBENCH-17212B?style=for-the-badge&logo=github&logoColor=8DE2BC" alt="Open developer workbench"/></a>
+  <a href="https://github.com/bimolas?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE-PROJECTS-17212B?style=for-the-badge&logo=github&logoColor=white" alt="Explore repositories"/></a>
   <a href="mailto:samielmourtazak@gmail.com"><img src="https://img.shields.io/badge/CONTACT-EMAIL-17212B?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Contact by email"/></a>
-  <img src="https://komarev.com/ghpvc/?username=bimolas&style=flat-square&color=1ed760&label=VISITS" alt="Profile visits"/>
-</div><br/>
+  <br/><br/>
+  <img src="https://komarev.com/ghpvc/?username=bimolas&style=flat-square&color=2A9D8F&label=PROFILE+VISITS" alt="Profile visits"/>
+</div>
 
-<section>
+<br/>
+
+<div align="center">
+  <img width="100%" src="https://raw.githubusercontent.com/bimolas/bimolas/main/assets/terminal-card.svg" alt="Custom terminal card with the GitHub avatar converted to colored ASCII, full-stack focus, and live GitHub statistics"/>
+</div>
+
+## Résumé / Current focus
+
 <table>
   <tr>
-    <td width="33%" valign="top">
-      <h3>Frontend</h3>
-      I build and explore web interfaces with React, Next.js, TypeScript and Angular. I care about the details that make an interface feel coherent: layout, feedback, accessibility, and state.
+    <td width="50%" valign="top">
+      <b>Education</b><br/>
+      EMSI · 5DDSI — Développement Digital et Système d'Information<br/><br/>
+      <b>Direction</b><br/>
+      Full-stack development, backend engineering, and systems fundamentals.
     </td>
-    <td width="34%" valign="top">
-      <h3>Backend</h3>
-      I work with Java/Spring Boot and NestJS, focusing on API design, validation, authentication, persistence, and the boundaries between business domains.
-    </td>
-    <td width="33%" valign="top">
-      <h3>Delivery &amp; systems</h3>
-      I’m learning how apps reach production: Linux, Docker, CI/CD, service integration, logging, and the basics of deployment and observability.
+    <td width="50%" valign="top">
+      <b>Working with</b><br/>
+      Java / Spring Boot · NestJS · TypeScript · SQL · web interfaces<br/><br/>
+      <b>Currently learning</b><br/>
+      Linux · Docker · CI/CD · deployment and observability.
     </td>
   </tr>
 </table>
-<p><sub>I'm still learning. The goal is to understand each layer well enough to explain it, test it, and improve it — not just list the tools.</sub></p>
-</section>
+
+<div align="center">
+  <a href="https://bimolas.github.io/bimolas/#resume"><img src="https://img.shields.io/badge/VIEW-PRINTABLE%20RÉSUMÉ-17212B?style=for-the-badge&logo=readthedocs&logoColor=8DE2BC" alt="View printable résumé"/></a>
+  <a href="https://bimolas.github.io/bimolas/#workbench"><img src="https://img.shields.io/badge/OPEN-LIVE%20AUDIO%20LAB-17212B?style=for-the-badge&logo=webaudio&logoColor=8DE2BC" alt="Open interactive local audio player"/></a>
+</div>
 
 ## 01 / Projects across the stack
 
@@ -119,15 +132,12 @@
   <img src="https://img.shields.io/badge/04-Kubernetes%20%26%20IaC-1F6FEB?style=flat-square" alt="Kubernetes and infrastructure as code"/>
 </div>
 
-## 04 / Soundtrack
+## 04 / Live audio workbench
+
+The README itself cannot run an interactive audio player. The linked workbench can load audio tracks from your device, play, pause, stop, skip, seek, adjust volume, and draw a live spectrum or waveform from the playback signal. Audio files stay in the browser and are not uploaded to a server.
 
 <div align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/bimolas/bimolas/main/assets/spotify-now-playing.svg" alt="Animated Spotify listening status panel, updated automatically when Spotify is connected"/>
-  <p>
-    <!-- SPOTIFY-NOW-PLAYING:START -->
-    Spotify is not connected yet. Add the Spotify Actions secrets described in [the setup guide](SPOTIFY_SETUP.md) to enable live status.
-    <!-- SPOTIFY-NOW-PLAYING:END -->
-  </p>
+  <a href="https://bimolas.github.io/bimolas/#workbench"><img src="https://img.shields.io/badge/OPEN-LIVE%20AUDIO%20WORKBENCH-17212B?style=for-the-badge&logo=webaudio&logoColor=8DE2BC" alt="Open the interactive audio workbench"/></a>
 </div>
 
 ## 05 / GitHub activity
@@ -136,14 +146,15 @@
   <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=bimolas&bg_color=0D1117&color=C9D1D9&line=58A6FF&point=FFFFFF&area=true&hide_border=true" alt="GitHub contribution activity graph"/>
 </div>
 
-<sub>The terminal counters use GitHub data. The Spotify panel needs one-time account authorization before showing a live track.</sub>
+<sub>The terminal counters use GitHub data. The audio workbench runs locally in the browser and does not upload your music.</sub>
 
 
 ---
 
 <div align="center">
   <a href="https://github.com/bimolas"><img src="https://img.shields.io/badge/GitHub-bimolas-0D1117?style=for-the-badge&logo=github" alt="GitHub profile"/></a>
-  <a href="mailto:samielmourtazak@gmail.com"><img src="https://img.shields.io/badge/Email-Let's%20connect-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"/></a>
+  <a href="mailto:samielmourtazak@gmail.com"><img src="https://img.shields.io/badge/Email-Let%27s%20connect-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"/></a>
   <br/><br/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8DE2BC,48:176C70,100:0B1016&height=112&section=footer&animation=fadeIn" alt="Animated wave footer"/>
   <sub>Build deliberately. Understand the system. Keep improving.</sub>
 </div>
