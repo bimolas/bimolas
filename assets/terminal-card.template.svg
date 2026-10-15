@@ -38,7 +38,7 @@
     <ellipse cx="105" cy="99" rx="6" ry="8" fill="#4fa49c"/><ellipse cx="150" cy="99" rx="6" ry="8" fill="#4fa49c"/><ellipse cx="106" cy="100" rx="2.5" ry="4" fill="#142b35"/><ellipse cx="151" cy="100" rx="2.5" ry="4" fill="#142b35"/>
     <circle cx="107" cy="97" r="1.8" fill="#fff"/><circle cx="152" cy="97" r="1.8" fill="#fff"/><path d="M126 100L123 116L129 117" fill="none" stroke="#c89070" stroke-width="1.5" stroke-linecap="round"/><path d="M113 127Q126 135 140 126" fill="none" stroke="#955e55" stroke-width="2.2" stroke-linecap="round"/>
     <path d="M67 78L76 50L95 39L108 51L116 29L130 48L146 27L155 48L177 44L185 72L175 82L164 62L152 72L139 54L128 74L112 56L99 80L87 64L78 86Z" fill="url(#hair)" stroke="#30241f" stroke-width="1.5"/>
-    <path d="M82 80L97 64L107 82L119 57L132 81L147 59L155 84L170 68L173 93L162 105L156 89L144 103L132 88L120 105L108 89L95 106L86 94Z" fill="#543a2c"/>
+    <path d="M82 80L97 64L107 82L119 57L132 81L147 59L155 84L170 68L173 80L162 86L156 78L144 86L132 78L120 85L108 78L95 86L86 82Z" fill="#543a2c"/>
     <path d="M91 52L97 45M118 50L123 39M151 48L158 42" stroke="#8e6853" stroke-width="2" stroke-linecap="round" opacity=".8"/>
   </g>
   <text x="137" y="303" text-anchor="middle" fill="#dce7f2" font-size="12" font-weight="700">KAZUMA / ADVENTURER MODE</text><text x="137" y="319" text-anchor="middle" fill="#8193a7" font-size="9.5" letter-spacing="1.2">DRAWN WITH SVG · VECTOR ART</text>
