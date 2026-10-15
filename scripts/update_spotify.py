@@ -112,12 +112,12 @@ def main() -> int:
             print(f"Spotify refresh failed ({type(exc).__name__}). Check app credentials and token.", file=sys.stderr)
             state = "error"
             markdown = "Spotify could not return the current track. Check the latest workflow run; the saved token may need re-authorization."
-    if playlist_url:
-        if playlist_url.startswith("https://open.spotify.com/"):
-            markdown += f" · [Open playlist ↗]({playlist_url})"
-        else:
-            print("SPOTIFY_PLAYLIST_URL is not a Spotify HTTPS link; ignoring it.", file=sys.stderr)
-    SVG_PATH.write_text(render_panel(state, title, artist, bool(playlist_url)), encoding="utf-8")
+    playlist_linked = bool(playlist_url and playlist_url.startswith("https://open.spotify.com/"))
+    if playlist_linked:
+        markdown += f" · [Open playlist ↗]({playlist_url})"
+    elif playlist_url:
+        print("SPOTIFY_PLAYLIST_URL is not a Spotify HTTPS link; ignoring it.", file=sys.stderr)
+    SVG_PATH.write_text(render_panel(state, title, artist, playlist_linked), encoding="utf-8")
     update_readme(markdown)
     print(f"Rendered Spotify panel state: {state}.")
     return 0
