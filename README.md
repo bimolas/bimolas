@@ -1,83 +1,83 @@
 <!-- Profile README · github.com/bimolas -->
 
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,40:14213D,75:005F99,100:00B4D8&height=210&section=header&text=SAMI%20EL%20MOURTAZAK&fontSize=38&fontColor=F0F6FC&fontAlignY=34&desc=SOFTWARE%20ENGINEERING%20%2F%20BACKEND%20%2F%20SYSTEMS&descSize=13&descAlignY=56&animation=fadeIn" alt="Sami El Mourtazak — Software Engineering, Backend, Systems" />
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=700&lines=Designing+APIs+and+data+models;Exploring+distributed+systems;Building+with+Java+%2F+Spring+%2F+NestJS;Learning+the+craft+of+DevOps" alt="Animated lines: APIs, distributed systems, backend, DevOps"/>
+  <img width="100%" src="https://raw.githubusercontent.com/bimolas/bimolas/main/assets/terminal-card.svg" alt="Code-rendered terminal card with a Kazuma-inspired SVG portrait, frontend and backend stack, and live GitHub repository statistics"/>
   <br/><br/>
-  <a href="https://github.com/bimolas?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE-PROJECTS-161B22?style=for-the-badge&logo=github&logoColor=white" alt="Explore projects"/></a>
-  <a href="mailto:samielmourtazak@gmail.com"><img src="https://img.shields.io/badge/CONTACT-EMAIL-161B22?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Contact by email"/></a>
-  <br/><br/>
-  <img src="https://komarev.com/ghpvc/?username=bimolas&style=flat-square&color=0077B6&label=PROFILE+VIEWS" alt="Profile views counter"/>
-</div>
-
-<br/>
+  <a href="https://github.com/bimolas?tab=repositories"><img src="https://img.shields.io/badge/OPEN-REPOSITORIES-17212B?style=for-the-badge&logo=github&logoColor=white" alt="Open repositories"/></a>
+  <a href="mailto:samielmourtazak@gmail.com"><img src="https://img.shields.io/badge/CONTACT-EMAIL-17212B?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Contact by email"/></a>
+  <img src="https://komarev.com/ghpvc/?username=bimolas&style=flat-square&color=1ed760&label=VISITS" alt="Profile visits"/>
+</div><br/>
 
 <section>
 <table>
   <tr>
-    <td width="68%" valign="middle">
-      <h2>I want to understand the whole request path.</h2>
-      <p>I’m Sami, a 5DDSI student in Morocco, working on backend APIs and desktop software.</p>
-      <p>I’m interested in what connects the code to a working system: data models, service discovery, deployment, and figuring out why something broke.</p>
-      <p>I’m strengthening my backend foundations while learning more about Linux, containers, and CI/CD.</p>
+    <td width="33%" valign="top">
+      <h3>Frontend</h3>
+      I build and explore web interfaces with React, Next.js, TypeScript and Angular. I care about the details that make an interface feel coherent: layout, feedback, accessibility, and state.
     </td>
-    <td width="32%" valign="middle">
-      <p><sub>CURRENT FOCUS</sub></p>
-      <p><b>Building with</b><br/>Java · Spring Boot · NestJS</p>
-      <p><b>Exploring</b><br/>Linux · Docker · CI/CD</p>
-      <p><b>Next up</b><br/>Kubernetes · infrastructure as code</p>
+    <td width="34%" valign="top">
+      <h3>Backend</h3>
+      I work with Java/Spring Boot and NestJS, focusing on API design, validation, authentication, persistence, and the boundaries between business domains.
+    </td>
+    <td width="33%" valign="top">
+      <h3>Delivery &amp; systems</h3>
+      I’m learning how apps reach production: Linux, Docker, CI/CD, service integration, logging, and the basics of deployment and observability.
     </td>
   </tr>
 </table>
+<p><sub>I'm still learning. The goal is to understand each layer well enough to explain it, test it, and improve it — not just list the tools.</sub></p>
 </section>
 
-## <img src="https://img.shields.io/badge/01-SELECTED%20ENGINEERING-0D1117?style=flat-square" alt="01 Selected engineering"/>
+## 01 / Projects across the stack
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/bimolas/docShare"><img src="https://img.shields.io/badge/PROJECT%2001-SecureDocSharing-16324F?style=for-the-badge&logo=spring&logoColor=white" alt="SecureDocSharing"/></a>
+      <a href="https://github.com/bimolas/docShare"><img src="https://img.shields.io/badge/FULL--STACK-SecureDocSharing-16324F?style=for-the-badge&logo=angular&logoColor=white" alt="SecureDocSharing"/></a>
       <h3>Secure document workflows</h3>
-      <p>Document sharing with an emphasis on identity, event-driven integration, object storage, and service orchestration.</p>
-      <p><img src="https://img.shields.io/badge/Java%2021-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java 21"/> <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot"/> <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Kafka"/> <img src="https://img.shields.io/badge/Keycloak-4D4D4D?style=flat-square&logo=keycloak&logoColor=white" alt="Keycloak"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/></p>
-      <sub>IDENTITY / MESSAGING / OBJECT STORAGE / CONTAINERS</sub>
+      <p>Angular UI and Spring Boot API, backed by identity, object storage, caching, and event streaming. A project for seeing how multiple services fit together.</p>
+      <p><img src="https://img.shields.io/badge/Angular-19-DD0031?style=flat-square&logo=angular&logoColor=white" alt="Angular"/> <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot"/> <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Kafka"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/></p>
+      <sub>FRONTEND / API / IDENTITY / MESSAGING / STORAGE</sub>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/bimolas/nexus"><img src="https://img.shields.io/badge/PROJECT%2002-Nexus%20Browser-16324F?style=for-the-badge&logo=java&logoColor=white" alt="Nexus Browser"/></a>
+      <a href="https://github.com/bimolas/CRM_facturation_api"><img src="https://img.shields.io/badge/BACKEND-CRM%20%26%20Facturation-16324F?style=for-the-badge&logo=nestjs&logoColor=white" alt="CRM and Facturation API"/></a>
+      <h3>Business features, separated by domain</h3>
+      <p>A NestJS API organized around authentication, identity, catalog, contracting, finance, execution, teams, and related business capabilities.</p>
+      <p><img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white" alt="NestJS"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/> <img src="https://img.shields.io/badge/Swagger-85EA2D?style=flat-square&logo=swagger&logoColor=black" alt="Swagger"/></p>
+      <sub>API DESIGN / AUTHENTICATION / BUSINESS DOMAINS</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/bimolas/gestion_stock_front"><img src="https://img.shields.io/badge/FRONTEND-Stock%20Management-16324F?style=for-the-badge&logo=react&logoColor=white" alt="Stock management frontend"/></a>
+      <h3>Inventory interface</h3>
+      <p>A dedicated frontend repo for stock-management work. Explore the client/server boundary and how the UI communicates with an API.</p>
+      <p><img src="https://img.shields.io/badge/WEB-Interface-1F6FEB?style=flat-square" alt="Web interface"/> <img src="https://img.shields.io/badge/CLIENT--SERVER-Contracts-1F6FEB?style=flat-square" alt="Client server contracts"/></p>
+      <sub><a href="https://github.com/bimolas/gestion_stock_front">FRONTEND REPOSITORY</a></sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/bimolas/nexus"><img src="https://img.shields.io/badge/DESKTOP-Nexus%20Browser-16324F?style=for-the-badge&logo=java&logoColor=white" alt="Nexus Browser"/></a>
       <h3>A browser built as a desktop application</h3>
       <p>A Java desktop browser exploring embedded Chromium, multi-tab workflows, persistent user data, and layered application architecture.</p>
       <p><img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java"/> <img src="https://img.shields.io/badge/JavaFX-5382A1?style=flat-square&logo=java&logoColor=white" alt="JavaFX"/> <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite"/> <img src="https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white" alt="Maven"/></p>
       <sub>DESKTOP / MVC / PERSISTENCE / BROWSER INTEGRATION</sub>
     </td>
   </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/bimolas/library_api"><img src="https://img.shields.io/badge/PROJECT%2003-Library%20API-16324F?style=for-the-badge&logo=neo4j&logoColor=white" alt="Library API"/></a>
-      <h3>Relationships as a first-class model</h3>
-      <p>A library backend using a graph data model for books, copies, borrowing, reservations, and relationship-driven queries.</p>
-      <p><img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white" alt="NestJS"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/> <img src="https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white" alt="Neo4j"/> <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" alt="JWT"/></p>
-      <sub>GRAPH MODELLING / REST API / AUTHENTICATION / DOMAIN LOGIC</sub>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/bimolas/CRM_facturation_api"><img src="https://img.shields.io/badge/PROJECT%2004-CRM%20%26%20Facturation-16324F?style=for-the-badge&logo=nestjs&logoColor=white" alt="CRM and Facturation API"/></a>
-      <h3>Business domains, separated cleanly</h3>
-      <p>A modular API organized around identity, catalog, contracting, finance, execution, teams, and related business capabilities.</p>
-      <p><img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white" alt="NestJS"/> <img src="https://img.shields.io/badge/TypeORM-FE0803?style=flat-square&logo=typeorm&logoColor=white" alt="TypeORM"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/> <img src="https://img.shields.io/badge/Swagger-85EA2D?style=flat-square&logo=swagger&logoColor=black" alt="Swagger"/></p>
-      <sub>MODULAR DESIGN / BUSINESS DOMAINS / API DOCUMENTATION</sub>
-    </td>
-  </tr>
 </table>
 
-## <img src="https://img.shields.io/badge/02-TECH%20STACK-0D1117?style=flat-square" alt="02 Tech stack"/>
+## 02 / Tools I work with
 
 <div align="center">
-  <p><b>LANGUAGES & BACKEND</b></p>
-  <img src="https://skillicons.dev/icons?i=java,spring,ts,nestjs,js,cs,dotnet&theme=dark" alt="Java, Spring, TypeScript, NestJS, JavaScript, C sharp, .NET"/>
+  <p><b>FRONTEND</b></p>
+  <img src="https://skillicons.dev/icons?i=react,nextjs,angular,ts,js,html,css,tailwind&theme=dark" alt="React, Next.js, Angular, TypeScript, JavaScript, HTML, CSS and Tailwind CSS"/>
   <br/><br/>
-  <p><b>DATA, INFRASTRUCTURE & TOOLING</b></p>
-  <img src="https://skillicons.dev/icons?i=postgres,mysql,redis,docker,kubernetes,linux,git,github,maven&theme=dark" alt="PostgreSQL, MySQL, Redis, Docker, Kubernetes, Linux, Git, GitHub, Maven"/>
+  <p><b>BACKEND &amp; DATA</b></p>
+  <img src="https://skillicons.dev/icons?i=java,spring,nestjs,cs,dotnet,postgres,mysql,redis,neo4j&theme=dark" alt="Java, Spring, NestJS, C sharp, dotnet, PostgreSQL, MySQL, Redis and Neo4j"/>
+  <br/><br/>
+  <p><b>DELIVERY &amp; TOOLING</b></p>
+  <img src="https://skillicons.dev/icons?i=linux,docker,kubernetes,git,github,maven,githubactions&theme=dark" alt="Linux, Docker, Kubernetes, Git, GitHub, Maven and GitHub Actions"/>
   <br/>
-  <sub>Some technologies are part of my current learning path, not claims of production-level expertise.</sub>
+  <sub>These are tools I use or am learning; the icon row maps interests, not expert-level production claims.</sub>
 </div>
 
 ## 03 / From change to runtime
@@ -119,18 +119,25 @@
   <img src="https://img.shields.io/badge/04-Kubernetes%20%26%20IaC-1F6FEB?style=flat-square" alt="Kubernetes and infrastructure as code"/>
 </div>
 
-## <img src="https://img.shields.io/badge/04-GITHUB%20SIGNALS-0D1117?style=flat-square" alt="04 GitHub signals"/>
+## 04 / Soundtrack
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=bimolas&show_icons=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF&rank_icon=github" alt="GitHub profile statistics"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bimolas&layout=compact&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" alt="Most used languages on GitHub"/>
-  <br/><br/>
-  <img width="95%" src="https://streak-stats.demolab.com?user=bimolas&theme=github-dark-blue&hide_border=true&background=0D1117&ring=58A6FF&fire=F78166&currStreakLabel=58A6FF" alt="GitHub contribution streak"/>
-  <br/><br/>
+  <img width="100%" src="https://raw.githubusercontent.com/bimolas/bimolas/main/assets/spotify-now-playing.svg" alt="Animated Spotify listening status panel, updated automatically when Spotify is connected"/>
+  <p>
+    <!-- SPOTIFY-NOW-PLAYING:START -->
+    Spotify is not connected yet. Add the Spotify Actions secrets described in [the setup guide](SPOTIFY_SETUP.md) to enable live status.
+    <!-- SPOTIFY-NOW-PLAYING:END -->
+  </p>
+</div>
+
+## 05 / GitHub activity
+
+<div align="center">
   <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=bimolas&bg_color=0D1117&color=C9D1D9&line=58A6FF&point=FFFFFF&area=true&hide_border=true" alt="GitHub contribution activity graph"/>
 </div>
 
-<sub>Stats and activity visualizations are generated from GitHub data by external services. Availability may vary.</sub>
+<sub>The terminal counters use GitHub data. The Spotify panel needs one-time account authorization before showing a live track.</sub>
+
 
 ---
 
@@ -138,6 +145,5 @@
   <a href="https://github.com/bimolas"><img src="https://img.shields.io/badge/GitHub-bimolas-0D1117?style=for-the-badge&logo=github" alt="GitHub profile"/></a>
   <a href="mailto:samielmourtazak@gmail.com"><img src="https://img.shields.io/badge/Email-Let's%20connect-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"/></a>
   <br/><br/>
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00B4D8,50:005F99,100:0D1117&height=110&section=footer&animation=fadeIn" alt="Animated footer decoration"/>
-  <sub>Learn deeply. Build deliberately. Keep improving.</sub>
+  <sub>Build deliberately. Understand the system. Keep improving.</sub>
 </div>
