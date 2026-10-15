@@ -1,7 +1,7 @@
 <!-- Profile README · github.com/bimolas -->
 
 <div align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/bimolas/bimolas/main/assets/terminal-card.svg" alt="Code-rendered terminal card with a Kazuma-inspired SVG portrait, frontend and backend stack, and live GitHub repository statistics"/>
+  <img width="100%" src="https://raw.githubusercontent.com/bimolas/bimolas/main/assets/terminal-card.svg" alt="Custom terminal card with the GitHub avatar converted to colored ASCII, full-stack focus, and live GitHub repository statistics"/>
   <br/><br/>
   <a href="https://github.com/bimolas?tab=repositories"><img src="https://img.shields.io/badge/OPEN-REPOSITORIES-17212B?style=for-the-badge&logo=github&logoColor=white" alt="Open repositories"/></a>
   <a href="mailto:samielmourtazak@gmail.com"><img src="https://img.shields.io/badge/CONTACT-EMAIL-17212B?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Contact by email"/></a>
