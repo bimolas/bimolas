@@ -1,0 +1,40 @@
+name: Refresh terminal profile stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * *"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/profile-terminal.yml"
+      - "scripts/update_profile_terminal.py"
+      - "assets/terminal-card.template.svg"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Render current GitHub data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: bimolas
+        run: python scripts/update_profile_terminal.py
+      - name: Commit when the rendered card changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/terminal-card.svg
+          if git diff --cached --quiet; then
+            echo "Terminal card is already current."
+          else
+            git commit -m "chore: refresh terminal profile stats"
+            git push
+          fi
