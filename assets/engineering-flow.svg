@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+<title id="title">From problem to production: software engineering workflow and runtime request architecture</title>
+<desc id="desc">A dark navy and cyan architecture infographic. The top lane shows discover, design, build, integrate, ship and observe, with animated particles travelling through the stages. The bottom lane shows a client request passing through an API gateway, authentication and service discovery, load balancing, application services, data stores and an event bus, with observability feedback.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1220"/><stop offset=".55" stop-color="#101d32"/><stop offset="1" stop-color="#07111d"/></linearGradient>
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+  <linearGradient id="green" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22c55e"/><stop offset="1" stop-color="#2dd4bf"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#27405c" stroke-width=".6" opacity=".45"/></pattern>
+  <style>
+    .heading{font:700 25px 'Segoe UI',Arial,sans-serif;fill:#f0f6fc;letter-spacing:1px}
+    .sub{font:12px 'Segoe UI',Arial,sans-serif;fill:#8fa9c5;letter-spacing:2px}
+    .label{font:700 14px 'Segoe UI',Arial,sans-serif;fill:#e6f4ff}
+    .small{font:12px 'Segoe UI',Arial,sans-serif;fill:#9eb5ce}
+    .tiny{font:10px 'Segoe UI',Arial,sans-serif;fill:#6f8ba8;letter-spacing:1px}
+    .node{fill:#111f33;stroke:#31506e;stroke-width:1.4}
+    .nodeBlue{fill:#10253b;stroke:#2588b9;stroke-width:1.5}
+    .nodeGreen{fill:#102a2b;stroke:#218b83;stroke-width:1.5}
+    .edge{fill:none;stroke:#3d739b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+    .dash{stroke-dasharray:7 9;animation:dash 2.8s linear infinite}
+    .pulse{animation:pulse 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    @keyframes dash{to{stroke-dashoffset:-64}}
+    @keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+  </style>
+</defs>
+<rect width="1200" height="820" rx="24" fill="url(#bg)"/>
+<rect width="1200" height="820" rx="24" fill="url(#grid)" opacity=".8"/>
+<rect x="1" y="1" width="1198" height="818" rx="23" fill="none" stroke="#28435f" stroke-width="2"/>
+<text x="48" y="54" class="sub">ENGINEERING PLAYBOOK / 01</text>
+<text x="48" y="88" class="heading">FROM PROBLEM TO PRODUCTION</text>
+<text x="48" y="113" class="small">A deliberate path from understanding the problem to operating a dependable system.</text>
+<g transform="translate(48 145)">
+  <rect width="1104" height="184" rx="16" fill="#0b1727" stroke="#223c57"/>
+  <text x="24" y="30" class="sub">THE DELIVERY LIFECYCLE</text>
+  <path d="M105 91H1000" class="edge dash" stroke="url(#cyan)"/>
+  <g>
+    <rect x="22" y="55" width="180" height="91" rx="12" class="node"/>
+    <circle cx="48" cy="78" r="13" fill="#173d5a"/><text x="48" y="82" text-anchor="middle" class="small">01</text>
+    <text x="68" y="82" class="label">Discover</text><text x="38" y="109" class="small">Problem · users</text><text x="38" y="127" class="small">Requirements · risks</text>
+  </g>
+  <g>
+    <rect x="241" y="55" width="180" height="91" rx="12" class="node"/>
+    <circle cx="267" cy="78" r="13" fill="#173d5a"/><text x="267" y="82" text-anchor="middle" class="small">02</text>
+    <text x="287" y="82" class="label">Design</text><text x="257" y="109" class="small">Domain · API</text><text x="257" y="127" class="small">Data · boundaries</text>
+  </g>
+  <g>
+    <rect x="460" y="55" width="180" height="91" rx="12" class="nodeBlue"/>
+    <circle cx="486" cy="78" r="13" fill="#075985"/><text x="486" y="82" text-anchor="middle" class="small">03</text>
+    <text x="506" y="82" class="label">Build</text><text x="476" y="109" class="small">Implement · test</text><text x="476" y="127" class="small">Review · refactor</text>
+  </g>
+  <g>
+    <rect x="679" y="55" width="180" height="91" rx="12" class="nodeBlue"/>
+    <circle cx="705" cy="78" r="13" fill="#075985"/><text x="705" y="82" text-anchor="middle" class="small">04</text>
+    <text x="725" y="82" class="label">Integrate</text><text x="695" y="109" class="small">APIs · messaging</text><text x="695" y="127" class="small">Dependencies · CI</text>
+  </g>
+  <g>
+    <rect x="898" y="55" width="184" height="91" rx="12" class="nodeGreen"/>
+    <circle cx="924" cy="78" r="13" fill="#115e59"/><text x="924" y="82" text-anchor="middle" class="small">05</text>
+    <text x="944" y="82" class="label">Ship &amp; observe</text><text x="914" y="109" class="small">Deploy · monitor</text><text x="914" y="127" class="small">Learn · improve</text>
+  </g>
+  <circle r="5" fill="#67e8f9" filter="url(#glow)"><animateMotion dur="5s" repeatCount="indefinite" path="M105 91 H1000"/></circle>
+  <circle r="4" fill="#a5f3fc" filter="url(#glow)"><animateMotion dur="5s" begin="-2.5s" repeatCount="indefinite" path="M105 91 H1000"/></circle>
+  <path d="M1080 162 C1080 178 30 178 30 160" fill="none" stroke="#287c91" stroke-width="1.5" stroke-dasharray="4 7"/>
+  <text x="554" y="169" text-anchor="middle" class="tiny">FEEDBACK LOOP: OBSERVATIONS INFORM THE NEXT ITERATION</text>
+</g>
+<text x="48" y="374" class="sub">RUNTIME VIEW / 02</text>
+<text x="48" y="407" class="heading">WHAT HAPPENS WHEN A REQUEST ARRIVES?</text>
+<text x="48" y="431" class="small">A simplified service architecture — actual components depend on the application.</text>
+<g>
+  <rect x="48" y="467" width="1104" height="211" rx="16" fill="#0b1727" stroke="#223c57"/>
+  <text x="72" y="494" class="tiny">SYNCHRONOUS REQUEST PATH</text>
+  <path d="M150 557H238 M360 557H440 M560 557H640 M770 557H852" class="edge"/>
+  <path d="M150 557H238 M360 557H440 M560 557H640 M770 557H852" class="edge dash" stroke="#22d3ee"/>
+  <g>
+    <rect x="72" y="522" width="78" height="70" rx="10" class="node"/>
+    <text x="111" y="550" text-anchor="middle" class="label">Client</text><text x="111" y="570" text-anchor="middle" class="tiny">UI / app</text>
+  </g>
+  <g>
+    <rect x="238" y="522" width="122" height="70" rx="10" class="nodeBlue"/>
+    <text x="299" y="548" text-anchor="middle" class="label">API Gateway</text><text x="299" y="568" text-anchor="middle" class="tiny">ROUTE / FILTER</text>
+  </g>
+  <g>
+    <rect x="440" y="522" width="120" height="70" rx="10" class="nodeBlue"/>
+    <text x="500" y="547" text-anchor="middle" class="label">Security</text><text x="500" y="566" text-anchor="middle" class="tiny">AUTH / POLICY</text>
+  </g>
+  <g>
+    <rect x="640" y="522" width="130" height="70" rx="10" class="nodeBlue"/>
+    <text x="705" y="547" text-anchor="middle" class="label">Discovery + LB</text><text x="705" y="566" text-anchor="middle" class="tiny">INSTANCE PICK</text>
+  </g>
+  <g>
+    <rect x="852" y="522" width="270" height="70" rx="10" class="nodeGreen"/>
+    <text x="987" y="547" text-anchor="middle" class="label">Application services</text><text x="987" y="566" text-anchor="middle" class="tiny">BUSINESS LOGIC / VALIDATION</text>
+  </g>
+  <circle r="5" fill="#67e8f9" filter="url(#glow)"><animateMotion dur="4.4s" repeatCount="indefinite" path="M150 557 H238 H360 H440 H560 H640 H770 H852 H1122"/></circle>
+  <path d="M986 592V616H770" class="edge"/>
+  <path d="M770 616H450" class="edge dash"/>
+  <rect x="610" y="600" width="160" height="32" rx="8" class="node"/>
+  <text x="690" y="620" text-anchor="middle" class="small">Events / message bus</text>
+  <path d="M986 592V650H918" class="edge"/>
+  <rect x="772" y="635" width="146" height="30" rx="8" class="node"/>
+  <text x="845" y="654" text-anchor="middle" class="small">Database / cache</text>
+  <rect x="292" y="600" width="220" height="50" rx="9" class="node"/>
+  <text x="402" y="621" text-anchor="middle" class="label">Observability</text>
+  <text x="402" y="638" text-anchor="middle" class="tiny">LOGS · METRICS · TRACES</text>
+  <path d="M852 575 C780 604 690 613 512 625" fill="none" stroke="#b794f4" stroke-width="1.6" stroke-dasharray="5 6"/>
+  <text x="72" y="646" class="tiny">RESPONSE RETURNS TO CLIENT</text>
+</g>
+<g transform="translate(48 704)">
+  <rect width="1104" height="72" rx="14" fill="#0e1b2d" stroke="#28435f"/>
+  <text x="22" y="27" class="sub">ENGINEERING PRINCIPLES</text>
+  <text x="22" y="51" class="small">Clear boundaries</text>
+  <circle cx="170" cy="47" r="3" fill="#22d3ee"/>
+  <text x="190" y="51" class="small">Secure by design</text>
+  <circle cx="345" cy="47" r="3" fill="#22d3ee"/>
+  <text x="365" y="51" class="small">Observable behavior</text>
+  <circle cx="550" cy="47" r="3" fill="#22d3ee"/>
+  <text x="570" y="51" class="small">Automated delivery</text>
+  <circle cx="740" cy="47" r="3" fill="#22d3ee"/>
+  <text x="760" y="51" class="small">Continuous feedback</text>
+</g>
+<text x="1150" y="802" text-anchor="end" class="tiny">BIMOLAS / ENGINEERING NOTES</text>
+</svg>
