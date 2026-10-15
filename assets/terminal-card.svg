@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+<title id="title">Sami's developer terminal</title><desc id="desc">A custom dark terminal card with an original Kazuma-inspired vector portrait, full-stack focus, and GitHub statistics refreshed by an action.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1018"/><stop offset="1" stop-color="#080b10"/></linearGradient>
+  <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffe1bf"/><stop offset="1" stop-color="#e8b68e"/></linearGradient>
+  <linearGradient id="cloak" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2f6b52"/><stop offset="1" stop-color="#12362d"/></linearGradient>
+  <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#765446"/><stop offset="1" stop-color="#32251f"/></linearGradient>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#294052" stroke-width=".6" opacity=".5"/></pattern>
+  <style>
+  text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  .muted{fill:#8497aa}.text{fill:#e1eaf2}.green{fill:#91d7b1}.cyan{fill:#79c9e8}.amber{fill:#e7bd78}
+  .tiny{font-size:10px;letter-spacing:1.2px}.body{font-size:13px}.label{fill:#8193a7;font-size:12px}.value{fill:#dce7f2;font-size:13px}.prompt{fill:#91d7b1;font-size:13px}.thin{stroke:#273747;stroke-width:1}
+  .blink{animation:blink 1.1s steps(2,start) infinite}.breathe{animation:breathe 3.5s ease-in-out infinite}
+  @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}@keyframes breathe{0%,100%{opacity:.4}50%{opacity:1}}
+  </style>
+</defs>
+<rect width="1200" height="620" rx="18" fill="url(#bg)"/><rect x="1" y="1" width="1198" height="618" rx="17" fill="none" stroke="#314252"/>
+<path d="M1 18Q1 1 18 1H1182Q1199 1 1199 18V48H1Z" fill="#131b25"/><line x1="1" y1="48" x2="1199" y2="48" stroke="#2e3d4b"/>
+<circle cx="25" cy="24" r="5.5" fill="#f77669"/><circle cx="44" cy="24" r="5.5" fill="#e5bd62"/><circle cx="63" cy="24" r="5.5" fill="#6fca8a"/>
+<text x="600" y="28" text-anchor="middle" fill="#9eacba" font-size="12">sami@devbox — zsh — 120×32</text><text x="1159" y="28" text-anchor="end" fill="#6e8398" font-size="10">UTF-8</text>
+
+<rect x="24" y="68" width="310" height="514" rx="11" fill="#0d151e" stroke="#2a3a49"/><rect x="24" y="68" width="310" height="514" rx="11" fill="url(#grid)" opacity=".8"/>
+<text x="43" y="94" class="tiny green">AVATAR.SVG</text><text x="315" y="94" text-anchor="end" class="tiny muted">VECTOR RENDER</text><line x1="42" y1="106" x2="316" y2="106" class="thin"/>
+<g transform="translate(42 116)">
+  <rect width="274" height="330" rx="8" fill="#0c151d" stroke="#253a4a"/>
+  <circle cx="137" cy="140" r="104" fill="#14252d"/><circle cx="137" cy="140" r="104" fill="none" stroke="#294b53" stroke-dasharray="2 7" class="breathe"/>
+  <g fill="#8dc9c3" opacity=".55"><rect x="26" y="28" width="3" height="3"/><rect x="229" y="47" width="4" height="4"/><rect x="38" y="214" width="3" height="3"/><rect x="215" y="234" width="3" height="3"/><rect x="67" y="65" width="2" height="2"/><rect x="201" y="90" width="2" height="2"/></g>
+  <g transform="translate(28 23)">
+    <path d="M55 194L63 156Q68 139 88 131L108 122H142L164 134Q185 146 191 170L202 238H35Z" fill="url(#cloak)" stroke="#0a211c" stroke-width="2"/>
+    <path d="M89 130L103 115H146L163 135L145 160L122 148L105 163Z" fill="#24463b" stroke="#b38b54" stroke-width="2"/>
+    <path d="M101 117L101 98H150V120L127 138Z" fill="url(#skin)"/>
+    <path d="M88 139L105 126L127 149L105 171L88 155Z M166 140L149 126L127 149L149 171L168 154Z" fill="#18352d" stroke="#b78f58" stroke-width="2"/>
+    <path d="M110 128L127 145L144 128L156 146L143 162H111L98 146Z" fill="#f0d5a0"/><path d="M103 172L127 194L151 172L158 238H96Z" fill="#1c4a3a" opacity=".82"/>
+    <ellipse cx="126" cy="85" rx="54" ry="62" fill="url(#skin)" stroke="#c99776" stroke-width="1.2"/><ellipse cx="72" cy="89" rx="8" ry="13" fill="#efc29e"/><ellipse cx="180" cy="89" rx="8" ry="13" fill="#efc29e"/>
+    <path d="M74 71L65 46L84 22L111 10L127 3L145 10L174 23L187 49L176 69L166 56L153 48L142 64L130 52L116 71L102 56L91 74L82 62Z" fill="url(#hair)" stroke="#30241f" stroke-width="2"/>
+    <path d="M89 81Q102 69 116 81 M138 81Q152 69 164 81" fill="none" stroke="#3c2a23" stroke-width="4" stroke-linecap="round"/>
+    <path d="M91 94Q103 86 117 95L114 107Q103 113 93 104Z M137 95Q151 86 163 94L161 104Q150 113 139 107Z" fill="#fbffff" stroke="#4d4037" stroke-width="1"/>
+    <ellipse cx="105" cy="99" rx="6" ry="8" fill="#4fa49c"/><ellipse cx="150" cy="99" rx="6" ry="8" fill="#4fa49c"/><ellipse cx="106" cy="100" rx="2.5" ry="4" fill="#142b35"/><ellipse cx="151" cy="100" rx="2.5" ry="4" fill="#142b35"/>
+    <circle cx="107" cy="97" r="1.8" fill="#fff"/><circle cx="152" cy="97" r="1.8" fill="#fff"/><path d="M126 100L123 116L129 117" fill="none" stroke="#c89070" stroke-width="1.5" stroke-linecap="round"/><path d="M113 127Q126 135 140 126" fill="none" stroke="#955e55" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M67 78L76 50L95 39L108 51L116 29L130 48L146 27L155 48L177 44L185 72L175 82L164 62L152 72L139 54L128 74L112 56L99 80L87 64L78 86Z" fill="url(#hair)" stroke="#30241f" stroke-width="1.5"/>
+    <path d="M82 80L97 64L107 82L119 57L132 81L147 59L155 84L170 68L173 93L162 105L156 89L144 103L132 88L120 105L108 89L95 106L86 94Z" fill="#543a2c"/>
+    <path d="M91 52L97 45M118 50L123 39M151 48L158 42" stroke="#8e6853" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+  </g>
+  <text x="137" y="303" text-anchor="middle" fill="#dce7f2" font-size="12" font-weight="700">KAZUMA / ADVENTURER MODE</text><text x="137" y="319" text-anchor="middle" fill="#8193a7" font-size="9.5" letter-spacing="1.2">DRAWN WITH SVG · VECTOR ART</text>
+</g>
+<text x="43" y="472" class="tiny muted">STATUS</text><circle cx="49" cy="493" r="4" fill="#81d7a3"><animate attributeName="opacity" values=".4;1;.4" dur="2.2s" repeatCount="indefinite"/></circle><text x="62" y="497" class="body text">curious, building, iterating</text>
+<text x="43" y="528" class="tiny muted">CLASS</text><text x="43" y="551" class="body green">FULL-STACK APPRENTICE</text><text x="43" y="567" class="tiny muted">MOROCCO / 5DDSI</text>
+
+<rect x="353" y="68" width="823" height="514" rx="11" fill="#0d151e" stroke="#2a3a49"/>
+<text x="376" y="94" class="tiny muted">~/profile/README.md</text><text x="1153" y="94" text-anchor="end" class="tiny green">SESSION READY</text><line x1="374" y1="106" x2="1155" y2="106" class="thin"/>
+<text x="378" y="135" class="prompt">$ whoami</text><text x="378" y="158" class="value" font-size="15" font-weight="700">EL MOURTAZAK SAMI</text><text x="378" y="179" class="label">software engineering student · Morocco</text>
+<text x="378" y="218" class="prompt">$ cat ./stack.yml</text>
+<text x="396" y="242" fill="#8fb7ca" class="body">frontend:</text><text x="538" y="242" class="value">React · Next.js · TypeScript · Angular</text>
+<text x="396" y="266" fill="#8fb7ca" class="body">backend:</text><text x="538" y="266" class="value">Java · Spring Boot · NestJS · .NET</text>
+<text x="396" y="290" fill="#8fb7ca" class="body">data:</text><text x="538" y="290" class="value">MySQL · PostgreSQL · Neo4j</text>
+<text x="396" y="314" fill="#8fb7ca" class="body">delivery:</text><text x="538" y="314" class="value">Linux · Docker · CI/CD · Git</text>
+<line x1="378" y1="335" x2="1152" y2="335" class="thin"/>
+<text x="378" y="360" class="prompt">$ gh profile --summary</text><text x="396" y="385" class="label">public repositories</text><text x="612" y="385" class="value" font-weight="700">—</text>
+<text x="740" y="385" class="label">repo stars</text><text x="852" y="385" class="value" font-weight="700">—</text>
+<text x="396" y="409" class="label">commit contributions · last 12 months</text><text x="680" y="409" class="value" font-weight="700">—</text>
+<text x="817" y="409" class="label">followers</text><text x="920" y="409" class="value" font-weight="700">—</text>
+<text x="396" y="433" class="label">languages across owned repos</text><text x="612" y="433" class="value">syncing from GitHub…</text>
+<text x="396" y="454" fill="#5f798b" font-size="10">Counts are fetched from GitHub; no generated or invented activity.</text>
+<line x1="378" y1="474" x2="1152" y2="474" class="thin"/><text x="378" y="501" class="prompt">$ ./dev-loop.sh</text>
+<g class="body"><text x="396" y="526" fill="#91d7b1">UNDERSTAND</text><text x="496" y="526" fill="#557286"> → </text><text x="531" y="526" fill="#79c9e8">BUILD</text><text x="581" y="526" fill="#557286"> → </text><text x="616" y="526" fill="#e7bd78">TEST</text><text x="660" y="526" fill="#557286"> → </text><text x="697" y="526" fill="#91d7b1">SHIP</text><text x="739" y="526" fill="#557286"> → </text><text x="775" y="526" fill="#79c9e8">OBSERVE</text></g>
+<rect x="378" y="545" width="8" height="14" rx="1" fill="#91d7b1" class="blink"/><text x="396" y="556" class="label">keep learning, keep shipping, keep the receipts.</text><text x="1153" y="556" text-anchor="end" fill="#61788a" font-size="10">awaiting first sync</text>
+<rect x="24" y="600" width="1152" height="22" rx="5" fill="#101820" stroke="#243442"/><circle cx="39" cy="611" r="3" fill="#83d7a1"/><text x="50" y="615" fill="#8fa2b4" font-size="10">FULL-STACK / BACKEND / SYSTEMS</text><text x="600" y="615" text-anchor="middle" fill="#668096" font-size="10">a portfolio is a workbench, not a scoreboard</text><text x="1158" y="615" text-anchor="end" fill="#8fa2b4" font-size="10">bimolas · main</text>
+</svg>
