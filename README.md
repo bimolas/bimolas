@@ -134,11 +134,13 @@
 
 ## 04 / Live audio workbench
 
-The README itself cannot run an interactive audio player. The linked workbench can load audio tracks from your device, play, pause, stop, skip, seek, adjust volume, and draw a live spectrum or waveform from the playback signal. Audio files stay in the browser and are not uploaded to a server.
-
 <div align="center">
-  <a href="https://bimolas.github.io/bimolas/#workbench"><img src="https://img.shields.io/badge/OPEN-LIVE%20AUDIO%20WORKBENCH-17212B?style=for-the-badge&logo=webaudio&logoColor=8DE2BC" alt="Open the interactive audio workbench"/></a>
+  <a href="https://bimolas.github.io/bimolas/#workbench"><img width="100%" src="https://raw.githubusercontent.com/bimolas/bimolas/main/assets/audio-workbench-preview.svg" alt="Preview of the interactive audio workbench — click to open the live player"/></a>
+  <br/>
+  <a href="https://bimolas.github.io/bimolas/#workbench"><img src="https://img.shields.io/badge/OPEN-INTERACTIVE%20AUDIO%20PLAYER-17212B?style=for-the-badge&logo=webaudio&logoColor=8DE2BC" alt="Open interactive audio player"/></a>
 </div>
+
+Load audio tracks from your device, play / pause / stop, skip tracks, seek, adjust volume, and switch between a live frequency spectrum and waveform. The analyser reads the player output in real time; files stay in your browser and are not uploaded to a server. GitHub README markdown cannot run the player’s JavaScript inline, so the preview opens the separate GitHub Pages app.
 
 ## 05 / GitHub activity
 
