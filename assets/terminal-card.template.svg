@@ -25,23 +25,8 @@
   <rect width="274" height="330" rx="8" fill="#0c151d" stroke="#253a4a"/>
   <circle cx="137" cy="140" r="104" fill="#14252d"/><circle cx="137" cy="140" r="104" fill="none" stroke="#294b53" stroke-dasharray="2 7" class="breathe"/>
   <g fill="#8dc9c3" opacity=".55"><rect x="26" y="28" width="3" height="3"/><rect x="229" y="47" width="4" height="4"/><rect x="38" y="214" width="3" height="3"/><rect x="215" y="234" width="3" height="3"/><rect x="67" y="65" width="2" height="2"/><rect x="201" y="90" width="2" height="2"/></g>
-  <g transform="translate(28 23)">
-    <path d="M55 194L63 156Q68 139 88 131L108 122H142L164 134Q185 146 191 170L202 238H35Z" fill="url(#cloak)" stroke="#0a211c" stroke-width="2"/>
-    <path d="M89 130L103 115H146L163 135L145 160L122 148L105 163Z" fill="#24463b" stroke="#b38b54" stroke-width="2"/>
-    <path d="M101 117L101 98H150V120L127 138Z" fill="url(#skin)"/>
-    <path d="M88 139L105 126L127 149L105 171L88 155Z M166 140L149 126L127 149L149 171L168 154Z" fill="#18352d" stroke="#b78f58" stroke-width="2"/>
-    <path d="M110 128L127 145L144 128L156 146L143 162H111L98 146Z" fill="#f0d5a0"/><path d="M103 172L127 194L151 172L158 238H96Z" fill="#1c4a3a" opacity=".82"/>
-    <ellipse cx="126" cy="85" rx="54" ry="62" fill="url(#skin)" stroke="#c99776" stroke-width="1.2"/><ellipse cx="72" cy="89" rx="8" ry="13" fill="#efc29e"/><ellipse cx="180" cy="89" rx="8" ry="13" fill="#efc29e"/>
-    <path d="M74 71L65 46L84 22L111 10L127 3L145 10L174 23L187 49L176 69L166 56L153 48L142 64L130 52L116 71L102 56L91 74L82 62Z" fill="url(#hair)" stroke="#30241f" stroke-width="2"/>
-    <path d="M89 81Q102 69 116 81 M138 81Q152 69 164 81" fill="none" stroke="#3c2a23" stroke-width="4" stroke-linecap="round"/>
-    <path d="M91 94Q103 86 117 95L114 107Q103 113 93 104Z M137 95Q151 86 163 94L161 104Q150 113 139 107Z" fill="#fbffff" stroke="#4d4037" stroke-width="1"/>
-    <ellipse cx="105" cy="99" rx="6" ry="8" fill="#4fa49c"/><ellipse cx="150" cy="99" rx="6" ry="8" fill="#4fa49c"/><ellipse cx="106" cy="100" rx="2.5" ry="4" fill="#142b35"/><ellipse cx="151" cy="100" rx="2.5" ry="4" fill="#142b35"/>
-    <circle cx="107" cy="97" r="1.8" fill="#fff"/><circle cx="152" cy="97" r="1.8" fill="#fff"/><path d="M126 100L123 116L129 117" fill="none" stroke="#c89070" stroke-width="1.5" stroke-linecap="round"/><path d="M113 127Q126 135 140 126" fill="none" stroke="#955e55" stroke-width="2.2" stroke-linecap="round"/>
-    <path d="M67 78L76 50L95 39L108 51L116 29L130 48L146 27L155 48L177 44L185 72L175 82L164 62L152 72L139 54L128 74L112 56L99 80L87 64L78 86Z" fill="url(#hair)" stroke="#30241f" stroke-width="1.5"/>
-    <path d="M82 80L97 64L107 82L119 57L132 81L147 59L155 84L170 68L173 80L162 86L156 78L144 86L132 78L120 85L108 78L95 86L86 82Z" fill="#543a2c"/>
-    <path d="M91 52L97 45M118 50L123 39M151 48L158 42" stroke="#8e6853" stroke-width="2" stroke-linecap="round" opacity=".8"/>
-  </g>
-  <text x="137" y="303" text-anchor="middle" fill="#dce7f2" font-size="12" font-weight="700">KAZUMA / ADVENTURER MODE</text><text x="137" y="319" text-anchor="middle" fill="#8193a7" font-size="9.5" letter-spacing="1.2">DRAWN WITH SVG · VECTOR ART</text>
+  {{ASCII_PORTRAIT}}
+  <text x="137" y="303" text-anchor="middle" fill="#dce7f2" font-size="12" font-weight="700">KAZUMA / ASCII TERMINAL</text><text x="137" y="319" text-anchor="middle" fill="#8193a7" font-size="9.5" letter-spacing="1.2">PROFILE AVATAR · COLOURED ASCII</text>
 </g>
 <text x="43" y="472" class="tiny muted">STATUS</text><circle cx="49" cy="493" r="4" fill="#81d7a3"><animate attributeName="opacity" values=".4;1;.4" dur="2.2s" repeatCount="indefinite"/></circle><text x="62" y="497" class="body text">curious, building, iterating</text>
 <text x="43" y="528" class="tiny muted">CLASS</text><text x="43" y="551" class="body green">FULL-STACK APPRENTICE</text><text x="43" y="567" class="tiny muted">MOROCCO / 5DDSI</text>
