@@ -15,21 +15,17 @@
 <section>
 <table>
   <tr>
-    <td width="66%" valign="middle">
-      <h2>⚡ Building beyond the endpoint.</h2>
-      <p><b>From problem framing to production-ready thinking.</b></p>
-      I’m a software engineering student interested in how the whole system fits together: <b>domain rules → API design → data → service integration → deployment</b>.
-      <br/><br/>
-      I like tracing the connections behind software: who can access a resource, where data lives, how services communicate, and how we know a system is behaving correctly.
-      <br/><br/>
-      <a href="https://github.com/bimolas?tab=repositories"><img src="https://img.shields.io/badge/01-BUILD-10253B?style=for-the-badge&logo=github&logoColor=58A6FF" alt="Build"/></a>
-      <a href="https://github.com/bimolas?tab=repositories"><img src="https://img.shields.io/badge/02-UNDERSTAND-10253B?style=for-the-badge&logo=bookstack&logoColor=58A6FF" alt="Understand"/></a>
-      <a href="https://github.com/bimolas?tab=repositories"><img src="https://img.shields.io/badge/03-IMPROVE-10253B?style=for-the-badge&logo=rocket&logoColor=58A6FF" alt="Improve"/></a>
+    <td width="68%" valign="middle">
+      <h2>I want to understand the whole request path.</h2>
+      <p>I’m Sami, a 5DDSI student in Morocco, working on backend APIs and desktop software.</p>
+      <p>I’m interested in what connects the code to a working system: data models, service discovery, deployment, and figuring out why something broke.</p>
+      <p>I’m strengthening my backend foundations while learning more about Linux, containers, and CI/CD.</p>
     </td>
-    <td width="34%" valign="middle" align="center">
-      <img src="https://img.shields.io/badge/⌖-MOROCCO-0D1117?style=for-the-badge&labelColor=0D1117" alt="Based in Morocco"/><br/><br/>
-      <img src="https://img.shields.io/badge/🎓-5DDSI-0D1117?style=for-the-badge&labelColor=0D1117" alt="5DDSI student"/><br/><br/>
-      <img src="https://img.shields.io/badge/FOCUS-BACKEND%20%2B%20SYSTEMS-0D1117?style=for-the-badge&labelColor=0D1117" alt="Backend and systems"/>
+    <td width="32%" valign="middle">
+      <p><sub>CURRENT FOCUS</sub></p>
+      <p><b>Building with</b><br/>Java · Spring Boot · NestJS</p>
+      <p><b>Exploring</b><br/>Linux · Docker · CI/CD</p>
+      <p><b>Next up</b><br/>Kubernetes · infrastructure as code</p>
     </td>
   </tr>
 </table>
@@ -84,33 +80,35 @@
   <sub>Some technologies are part of my current learning path, not claims of production-level expertise.</sub>
 </div>
 
-## <img src="https://img.shields.io/badge/03-SYSTEMS%20THINKING-0D1117?style=flat-square" alt="03 Systems thinking"/>
+## 03 / From change to runtime
 
 <p align="center">
-  <b>From an initial problem to a running, observable system.</b><br/>
-  <sub>A visual map of the engineering lifecycle and the request path through a typical service architecture.</sub>
+  <b>Two views of the same job.</b><br/>
+  <sub>How a change moves toward production, and how a live request moves through an application.</sub>
 </p>
 
 <div align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/bimolas/bimolas/main/assets/engineering-flow.svg" alt="Animated architecture diagram showing the software delivery lifecycle from discovery and design through build, integration, deployment and observation, plus a runtime request flowing from client through API gateway, security, service discovery and load balancing to application services, data stores, messaging and observability."/>
+  <img width="100%" src="https://raw.githubusercontent.com/bimolas/bimolas/main/assets/engineering-flow.svg" alt="Diagram showing the delivery lifecycle; a client request routed through an API gateway and load balancer to a selected service instance; service registration and discovery; data and messaging dependencies; the response path; and observability."/>
 </div>
 
 <details>
   <summary><b>↳ Read the architecture walkthrough</b></summary>
 
-  **01 · Discover the problem** — identify users, constraints, requirements, and risks before choosing a technology.
+  **01 · Understand** — clarify users, constraints, requirements, and likely failure cases before choosing a stack.
 
-  **02 · Design the boundaries** — define domain responsibilities, API contracts, data ownership, and how components communicate.
+  **02 · Design** — define service responsibilities, API contracts, data ownership, and communication patterns.
 
-  **03 · Build the core** — implement business rules, validation, persistence, and automated tests.
+  **03 · Build & test** — implement the business rules and use automated tests to check the behavior.
 
-  **04 · Integrate the system** — connect identity providers, services, event messaging, and external dependencies; verify the contracts between them.
+  **04 · Integrate** — verify contracts between components and connect persistence, identity, messaging, and external dependencies where needed.
 
-  **05 · Deliver and observe** — build and test through CI, package the application, deploy it, then use logs, metrics, and traces to understand its behavior.
+  **05 · Release & learn** — run the CI checks, deploy the application, then use logs, metrics, and traces to investigate behavior and guide the next change.
 
-  **At runtime:** a client request reaches the API gateway, passes routing and security checks, and is sent to a selected service instance. The service applies business logic and accesses the required data store or publishes an event. Observability captures signals, and the response returns to the client.
+  **At runtime:** the gateway routes the client request and applies the policies assigned to it. The load balancer chooses an eligible service instance from the instances available through discovery. The service can read or write application state and publish an event; the synchronous response returns to the client while asynchronous work can continue separately.
 
-  <sub>Illustrative architecture, not a claim that every component is used in every project. Service discovery and load balancing may be implemented in different places depending on the stack.</sub>
+  **Discovery is not the load balancer.** Service instances register with a registry, often with periodic heartbeats. A discovery client or gateway obtains the available instance list, and the load balancer selects a target. Implementations vary, and the registry is not necessarily queried afresh for every request.
+
+  <sub>This is a conceptual pattern, not a claim that every project uses these components. The location of discovery and load balancing depends on the framework and deployment architecture.</sub>
 </details>
 
 <div align="center">
