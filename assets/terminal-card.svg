@@ -58,7 +58,7 @@
   <text x="137" y="303" text-anchor="middle" fill="#dce7f2" font-size="12" font-weight="700">KAZUMA / ASCII TERMINAL</text><text x="137" y="319" text-anchor="middle" fill="#8193a7" font-size="9.5" letter-spacing="1.2">PROFILE AVATAR · COLOURED ASCII</text>
 </g>
 <text x="43" y="472" class="tiny muted">STATUS</text><circle cx="49" cy="493" r="4" fill="#81d7a3"><animate attributeName="opacity" values=".4;1;.4" dur="2.2s" repeatCount="indefinite"/></circle><text x="62" y="497" class="body text">curious, building, iterating</text>
-<text x="43" y="528" class="tiny muted">CLASS</text><text x="43" y="551" class="body green">FULL-STACK / SYSTEMS</text><text x="43" y="567" class="tiny muted">MOROCCO / 5DDSI</text>
+<text x="43" y="528" class="tiny muted">FOCUS</text><text x="43" y="551" class="body green">FULL-STACK / SYSTEMS</text><text x="43" y="567" class="tiny muted">MOROCCO / 5DDSI</text>
 
 <rect x="353" y="68" width="823" height="514" rx="11" fill="#0d151e" stroke="#2a3a49"/>
 <text x="376" y="94" class="tiny muted">~/profile/README.md</text><text x="1153" y="94" text-anchor="end" class="tiny green">SESSION READY</text><line x1="374" y1="106" x2="1155" y2="106" class="thin"/>
@@ -71,12 +71,12 @@
 <line x1="378" y1="335" x2="1152" y2="335" class="thin"/>
 <text x="378" y="360" class="prompt">$ gh profile --summary</text><text x="396" y="385" class="label">public repositories</text><text x="612" y="385" class="value" font-weight="700">30</text>
 <text x="740" y="385" class="label">repo stars</text><text x="852" y="385" class="value" font-weight="700">0</text>
-<text x="396" y="409" class="label">commit contributions · last 12 months</text><text x="680" y="409" class="value" font-weight="700">110</text>
+<text x="396" y="409" class="label">commit contributions · last 12 months</text><text x="680" y="409" class="value" font-weight="700">128</text>
 <text x="817" y="409" class="label">followers</text><text x="920" y="409" class="value" font-weight="700">0</text>
 <text x="396" y="433" class="label">languages across owned repos</text><text x="612" y="433" class="value">TypeScript · Java · JavaScript</text>
 <text x="396" y="454" fill="#5f798b" font-size="10">LIVE COUNTERS · PUBLIC GITHUB DATA</text>
 <line x1="378" y1="474" x2="1152" y2="474" class="thin"/><text x="378" y="501" class="prompt">$ ./dev-loop.sh</text>
 <g class="body"><text x="396" y="526" fill="#91d7b1">UNDERSTAND</text><text x="496" y="526" fill="#557286"> → </text><text x="531" y="526" fill="#79c9e8">BUILD</text><text x="581" y="526" fill="#557286"> → </text><text x="616" y="526" fill="#e7bd78">TEST</text><text x="660" y="526" fill="#557286"> → </text><text x="697" y="526" fill="#91d7b1">SHIP</text><text x="739" y="526" fill="#557286"> → </text><text x="775" y="526" fill="#79c9e8">OBSERVE</text></g>
-<rect x="378" y="545" width="8" height="14" rx="1" fill="#91d7b1" class="blink"/><text x="396" y="556" class="label">keep learning, keep shipping, keep the receipts.</text><text x="1153" y="556" text-anchor="end" fill="#61788a" font-size="10">synced 2026-10-15 UTC</text>
+<rect x="378" y="545" width="8" height="14" rx="1" fill="#91d7b1" class="blink"/><text x="396" y="556" class="label">keep learning, keep shipping, keep the receipts.</text><text x="1153" y="556" text-anchor="end" fill="#61788a" font-size="10">synced 2026-10-16 UTC</text>
 <rect x="24" y="600" width="1152" height="22" rx="5" fill="#101820" stroke="#243442"/><circle cx="39" cy="611" r="3" fill="#83d7a1"/><text x="50" y="615" fill="#8fa2b4" font-size="10">FULL-STACK / BACKEND / SYSTEMS</text><text x="600" y="615" text-anchor="middle" fill="#668096" font-size="10">a portfolio is a workbench, not a scoreboard</text><text x="1158" y="615" text-anchor="end" fill="#8fa2b4" font-size="10">bimolas · main</text>
 </svg>
