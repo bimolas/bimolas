@@ -38,7 +38,6 @@
 
 <div align="center">
   <a href="https://bimolas.github.io/bimolas/#resume"><img src="https://img.shields.io/badge/VIEW-PRINTABLE%20RÉSUMÉ-17212B?style=for-the-badge&logo=readthedocs&logoColor=8DE2BC" alt="View printable résumé"/></a>
-  <a href="https://bimolas.github.io/bimolas/#workbench"><img src="https://img.shields.io/badge/OPEN-LIVE%20AUDIO%20LAB-17212B?style=for-the-badge&logo=webaudio&logoColor=8DE2BC" alt="Open interactive local audio player"/></a>
 </div>
 
 ## 01 / Projects across the stack
@@ -132,15 +131,7 @@
   <img src="https://img.shields.io/badge/04-Kubernetes%20%26%20IaC-1F6FEB?style=flat-square" alt="Kubernetes and infrastructure as code"/>
 </div>
 
-## 04 / Live audio workbench
-
-The portfolio includes a **single-page audio deck** with a CSS-rendered vinyl record that spins during playback, play / pause / stop / reset controls, seeking, volume, a track queue, and a live Web Audio canvas visualizer. No screenshot is used as the player.
-
-[Open the one-page portfolio at the audio deck](https://bimolas.github.io/bimolas/#workbench)
-
-Tracks are loaded from the listener’s device and stay in the browser; they are not uploaded. GitHub README content cannot run the JavaScript player inline, so playback lives in the portfolio page itself.
-
-## 05 / GitHub activity
+## 04 / GitHub activity
 
 <div align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=bimolas&show_icons=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF&rank_icon=github" alt="GitHub profile statistics"/>
