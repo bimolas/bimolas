@@ -134,13 +134,11 @@
 
 ## 04 / Live audio workbench
 
-<div align="center">
-  <a href="https://bimolas.github.io/bimolas/#workbench"><img width="100%" src="https://raw.githubusercontent.com/bimolas/bimolas/main/assets/audio-workbench-preview.svg" alt="Preview of the interactive audio workbench — click to open the live player"/></a>
-  <br/>
-  <a href="https://bimolas.github.io/bimolas/#workbench"><img src="https://img.shields.io/badge/OPEN-INTERACTIVE%20AUDIO%20PLAYER-17212B?style=for-the-badge&logo=webaudio&logoColor=8DE2BC" alt="Open interactive audio player"/></a>
-</div>
+The portfolio includes a **single-page audio deck** with a CSS-rendered vinyl record that spins during playback, play / pause / stop / reset controls, seeking, volume, a track queue, and a live Web Audio canvas visualizer. No screenshot is used as the player.
 
-Load audio tracks from your device, play / pause / stop, skip tracks, seek, adjust volume, and switch between a live frequency spectrum and waveform. The analyser reads the player output in real time; files stay in your browser and are not uploaded to a server. GitHub README markdown cannot run the player’s JavaScript inline, so the preview opens the separate GitHub Pages app.
+[Open the one-page portfolio at the audio deck](https://bimolas.github.io/bimolas/#workbench)
+
+Tracks are loaded from the listener’s device and stay in the browser; they are not uploaded. GitHub README content cannot run the JavaScript player inline, so playback lives in the portfolio page itself.
 
 ## 05 / GitHub activity
 
